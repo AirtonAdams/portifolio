@@ -8,33 +8,58 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <nav class="nav__bar">
-                <a href="#home" class="logo" >Airton<b>Adams</b></a>
-                <ul class="nav__list-links">
-                    <li class="nav__link">
-                        <a href="#home">Início</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="projects">Projetos</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="Contact">Contato</a>
-                    </li>
-                </ul>
-                <button class="nav__menu-btn">
-                    <img src="src/images/menu.svg" alt="Ícone de menu hamburguer">
-                </button>
-            </nav>
-        </div>
+        <nav class="nav__bar">
+            <a href="#home" class="logo" >Airton<b>Adams</b></a>
+            <ul class="nav__list-links">
+                <li class="nav__link">
+                    <a onclick="closeMenu()" href="#home">Início</a>
+                </li>
+                <li class="nav__link">
+                    <a onclick="closeMenu()" href="#about">Sobre</a>
+                </li>
+                <li class="nav__link">
+                    <a onclick="closeMenu()" href="#projects">Projetos</a>
+                </li>
+                <li class="nav__link">
+                    <a onclick="closeMenu()" href="#contact">Contato</a>
+                </li>
+            </ul>
+            <button onclick="openMenu()" class="nav__open-menu-btn">
+                <img src="src/images/menu.svg" alt="Ícone de menu hamburguer">
+            </button>
+            <button onclick="closeMenu()" class="nav__close-menu-btn">
+                <img src="src/images/X.svg" alt="Ícone de fechar o menu">
+            </button>
+        </nav>
     </header>
+    <section id="home" class="home">
+        <div class="content-wrapper">
+            <img src="src/images/pc.svg" alt="Imagem de um computador desktop visto de cima com duas mãos no teclado">
+            <h1>Olá, eu sou o Airton</h1>
+            <h2>Programador front-end e entusiasta de tecnologia</h2>
+            <p>Mais de 5 anos de experiência na área de tecnologia me trouxeram uma enorme gama de conhecimentos e uma vontade de me especializar em desenvolvimento.</p>
+        </div>
+        <div class="btn-wrapper">
+            <button class="curriculo-btn">
+                <a href="src/download/Curriculo_Airton_Adams.pdf" download="Curriculo_Airton_Adams.pdf">
+                    <img src="src/images/ReadCvLogo.svg" alt="Ícone de uma folha de papel">
+                    Meu Currículo
+                </a>
+            </button>
+            <button class="contact-btn">
+                <a href="#contact">
+                    Fale comigo
+                    <img src="src/images/ArrowRight.svg" alt="Seta para direita">
+                </a>
+            </button>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
