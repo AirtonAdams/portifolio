@@ -88,11 +88,7 @@ button a {
 
 .nav__bar {
     background-color: var(--surface-background);
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 36rem;
-    height: var(--nav-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,7 +115,7 @@ body.menu-expanded .nav__list-links {
     width: 28rem;
     gap: 2.4rem;
     padding: 2rem 1.6rem;
-    margin-top: calc(var(--nav-height) + 3rem);
+    margin-top:var(--nav-height);
 }
 
 /*
@@ -165,7 +161,6 @@ body.menu-expanded .nav__close-menu-btn {
 
 .home {
     width: 100%;
-    margin-top:3.1rem;
     gap: 2.4rem;
 }
 
