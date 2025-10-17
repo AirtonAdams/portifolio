@@ -41,6 +41,7 @@ header {
 .wrapper {
     width: 36rem;
     overflow: hidden;
+    gap: 2.4rem;
 }
 
 h2 {
@@ -62,8 +63,12 @@ section {
     padding-block: 4.8rem;
 }
 
+.section-title {
+    font-family: "kalam", cursive;
+    color: var(--text-tertiary);
+}
+
 button a {
-    background-color: var(--btn-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,14 +79,19 @@ button a {
     cursor: pointer;
 }
 
+.purple-btn a {
+    background-color: var(--btn-color);
+}
+
+.grey-btn a {
+    background-color: var(--surface-secondary);
+}
+
 .nav__bar .wrapper {
     flex-direction: row;
     justify-content: space-between;
 }
 
-.curriculo-btn a {
-    background-color: var(--surface-secondary);
-}
 
 .content-wrapper {
     display: flex;
@@ -238,8 +248,9 @@ body.menu-expanded .nav__close-menu-btn {
     width: 3rem;
 }
 
-.about .content-wrapper p:first-child {
-    font-family: "kalam", cursive;
-    color: var(--text-tertiary);
-}
+/*===Projects===*/
 
+.projects h2 {
+    text-align: center;
+    width: 30rem;
+}
