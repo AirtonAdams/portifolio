@@ -13,7 +13,15 @@
 <body>
     <header>
         <nav class="nav__bar">
-            <a href="#home" class="logo" >Airton<b>Adams</b></a>
+            <div class="wrapper">
+                <a href="#home" class="logo" >Airton<b>Adams</b></a>
+                <button onclick="openMenu()" class="nav__open-menu-btn">
+                    <img src="src/images/menu.svg" alt="Ícone de menu hamburguer">
+                </button>
+                <button onclick="closeMenu()" class="nav__close-menu-btn">
+                    <img src="src/images/X.svg" alt="Ícone de fechar o menu">
+                </button>
+            </div>
             <ul class="nav__list-links">
                 <li class="nav__link">
                     <a onclick="closeMenu()" href="#home">Início</a>
@@ -28,12 +36,6 @@
                     <a onclick="closeMenu()" href="#contact">Contato</a>
                 </li>
             </ul>
-            <button onclick="openMenu()" class="nav__open-menu-btn">
-                <img src="src/images/menu.svg" alt="Ícone de menu hamburguer">
-            </button>
-            <button onclick="closeMenu()" class="nav__close-menu-btn">
-                <img src="src/images/X.svg" alt="Ícone de fechar o menu">
-            </button>
         </nav>
     </header>
     <section id="home" class="home">
