@@ -5,22 +5,30 @@
     --surface-tertiary: #4e4563;
     --text-primary: #f5f6f6;
     --text-secondary: #cdd0d4;
+    --text-tertiary: #7dffaf;
     --btn-color: #8a42db;
     --gradient: linear-gradient(90deg, #9955E8 0%, #7BFFAF 100%);
 
     --nav-height: 4rem
 }
 
-body {
+body, .wrapper, .home, .about {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 36rem;
-    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
     background: var(--surface-background);
     color: var(--text-primary);
     font-family: "heebo", cursive;
-    margin-inline: auto;
+}
+
+.wrapper {
+    width: 36rem;
 }
 
 h2 {
@@ -36,6 +44,34 @@ p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
+}
+
+section {
+    padding-block: 4.8rem;
+}
+
+button a {
+    background-color: var(--btn-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    border-radius: 7px;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.curriculo-btn a {
+    background-color: var(--surface-secondary);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
 }
 
 /*=== Nav ===*/
@@ -128,24 +164,12 @@ body.menu-expanded .nav__close-menu-btn {
 /*=== Home ===*/
 
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-top: calc(var(--nav-height) + 3.1rem);
+    width: 100%;
+    margin-top:3.1rem;
     gap: 2.4rem;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.content-wrapper img {
+.home__img {
     width: 100%;
 }
 
@@ -160,6 +184,7 @@ body.menu-expanded .nav__close-menu-btn {
 }
 
 .btn-wrapper {
+    margin-top: 2.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -167,18 +192,33 @@ body.menu-expanded .nav__close-menu-btn {
     gap: 1.6rem;
 }
 
-.btn-wrapper button a {
-    background-color: var(--btn-color);
+/*=== About ===*/
+
+.about {
+    background: var(--surface-primary);
+    width: 100%;
+}
+
+.about__img {
+    width: 30rem;
+}
+
+.about__icon-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.6rem;
-    border-radius: 7px;
-    gap: 0.4rem;
-    cursor: pointer;
+    justify-content: start;
+    gap: 2rem;
+    margin-block: 3rem;
 }
 
-.btn-wrapper .curriculo-btn a {
-    background-color: var(--surface-secondary);
+.about-icon {
+    width: 3rem;
 }
+
+.about .content-wrapper p:first-child {
+    font-family: "kalam", cursive;
+    color: var(--text-tertiary);
+}
+
