@@ -1,6 +1,6 @@
 # Portifolio
 
-Projeto em desenvolvimento utilizando o conceito de mobile-first
+Projeto em desenvolvimento utilizando HTML, CSS e JavaScript aplicando o conceito de mobile-first.
 
 ## Fase do projeto:
 * width: 360px -> Em andamento;
