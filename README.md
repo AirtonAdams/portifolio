@@ -8,5 +8,4 @@ Projeto em desenvolvimento utilizando HTML, CSS e JavaScript aplicando o conceit
 * width: 1366px -> Em andamento;
 * width: 1920px -> Em andamento.
 
-[Confira o projeto clicando aqui](https://airtonadams.github.io/portifolio/)
 <a href="https://airtonadams.github.io/portifolio/" target="_blank">Confira o projeto clicando aqui</a>
