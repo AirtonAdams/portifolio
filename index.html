@@ -15,10 +15,10 @@
         <nav class="nav__bar">
             <div class="wrapper">
                 <a href="#home" class="logo" >Airton<b>Adams</b></a>
-                <button onclick="openMenu()" class="nav__open-menu-btn">
+                <button id="open-menu" onclick="openMenu()" class="nav__open-menu-btn">
                     <img src="src/images/menu.svg" alt="Ícone de menu hamburguer">
                 </button>
-                <button onclick="closeMenu()" class="nav__close-menu-btn">
+                <button id="close-menu" onclick="closeMenu()" class="nav__close-menu-btn">
                     <img src="src/images/X.svg" alt="Ícone de fechar o menu">
                 </button>
             </div>
@@ -91,6 +91,11 @@
         <div class="wrapper">
             <p class="section-title">Projetos</p>
             <h2>Tire um tempo para ver alguns dos meu projetos</h2>
+            <div class="swiper">
+                <div id="repositorios" class="swiper-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
             <button class="grey-btn">
                 <a href="https://github.com/AirtonAdams">
                     <img src="src/images/logo-github 1.svg" alt="Logo do GitHub">
@@ -101,6 +106,6 @@
     </section>
 
 
-    <script src="main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
