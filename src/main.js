@@ -71,11 +71,8 @@ function renderizarRepos(repos) {
       </div>
     `
   })
-}
 
-buscarRepositorios()
-
-const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -98,3 +95,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+}
+
+buscarRepositorios()
