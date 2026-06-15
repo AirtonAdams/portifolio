@@ -1,3 +1,5 @@
+import '../styles/reset.css'
+import '../styles/style.css'
 import Swiper from 'swiper/bundle'
 import 'swiper/css/bundle'
 
