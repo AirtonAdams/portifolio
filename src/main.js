@@ -1,6 +1,6 @@
 import '../styles/reset.css'
 import '../styles/style.css'
-import Swiper from 'swiper/bundle'
+import Swiper from 'swiper/bundl'
 import 'swiper/css/bundle'
 
 document.querySelector('#open-menu').addEventListener('click', () => {
