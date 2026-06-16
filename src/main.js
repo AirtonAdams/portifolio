@@ -3,12 +3,22 @@ import '../styles/style.css'
 import Swiper from 'swiper/bundle'
 import 'swiper/css/bundle'
 
-document.querySelector('#open-menu').addEventListener('click', () => {
+const btnAbrir = document.querySelector('#open-menu')
+const btnFechar = document.querySelector('#close-menu')
+const linksNav = document.querySelectorAll('.nav__link a')
+
+btnAbrir.addEventListener('click', () => {
   document.body.classList.add('menu-expanded')
 })
 
-document.querySelector('#close-menu').addEventListener('click', () => {
+btnFechar.addEventListener('click', () => {
   document.body.classList.remove('menu-expanded')
+})
+
+linksNav.forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.classList.remove('menu-expanded')
+  })
 })
 
 const token = import.meta.env.VITE_GITHUB_TOKEN

@@ -37,6 +37,7 @@ header {
     align-items: center;
     width: 100vw;
     background: var(--nav-bar);
+    z-index: 1000;
 }
 
 .wrapper {
