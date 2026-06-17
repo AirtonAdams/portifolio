@@ -114,10 +114,25 @@ button a {
     flex-direction: row;
 }
 
-.nav__bar .wrapper{
-    background: var(--nav-bar);
-    width: 36rem;
+.nav__bar .wrapper, .nav__bar .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: var(--nav-height);
+}
+
+.nav__bar .wrapper {
+    position: relative;
+    flex-direction: column;
+    width: 36rem;
+    overflow: visible;
+    z-index: 1000;
+}
+
+.nav__bar .content-wrapper{
+    background-color: var(--nav-bar);
+    flex-direction: row;
+    width: 100%;
 }
 
 .logo {
@@ -144,7 +159,6 @@ button a {
     width: 22rem;
     gap: 1rem;
     padding: 2rem 1.6rem;
-    /*margin-top:var(--nav-height);*/
     z-index: -100;
 }
 
