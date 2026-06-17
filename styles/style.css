@@ -103,6 +103,11 @@ button a {
     gap: 2rem;
 }
 
+#about, #contact {
+    background: var(--surface-primary);
+    width: 100vw;
+}
+
 /*=== Nav ===*/
 
 .logo {
@@ -197,7 +202,7 @@ body.menu-expanded .nav__close-menu-btn {
 
 /*=== Home ===*/
 
-.home {
+#home {
     width: 100%;
     gap: 2.4rem;
 }
@@ -226,11 +231,6 @@ body.menu-expanded .nav__close-menu-btn {
 }
 
 /*=== About ===*/
-
-.about {
-    background: var(--surface-primary);
-    width: 100vw;
-}
 
 .about__img {
     width: 30rem;
@@ -306,3 +306,21 @@ body.menu-expanded .nav__close-menu-btn {
         height: 80%;
     }
 }
+
+#contact .wrapper {
+    align-items: start;
+}
+
+.contact__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: start;
+    gap: 0.2rem;
+
+    & a {
+        padding:1.2rem;
+
+    }
+}
+
