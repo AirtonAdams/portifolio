@@ -112,6 +112,7 @@ button a {
     justify-content: center;
     width: 100vw;
     flex-direction: row;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .nav__bar .wrapper, .nav__bar .content-wrapper {
@@ -156,7 +157,7 @@ button a {
     justify-content: center;
     align-items: end;
     flex-direction: column;
-    width: 22rem;
+    width: 100vw;
     gap: 1rem;
     padding: 2rem 1.6rem;
     z-index: -100;
@@ -166,7 +167,7 @@ button a {
     padding: 1.2rem;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 body.menu-expanded .nav__list-links {
