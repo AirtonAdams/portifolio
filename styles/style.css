@@ -416,3 +416,14 @@ footer .socials {
     gap: 2.6rem;
 }
 
+/*===768px===*/
+
+@media (min-width: 768px) {
+    .wrapper, .nav__bar .wrapper {
+        width: 60rem;
+    }
+    .swiper-slide {
+        max-width: 30rem;
+    }
+
+}

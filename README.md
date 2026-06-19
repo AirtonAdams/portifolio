@@ -3,7 +3,7 @@
 Project under development using HTML, CSS, and JavaScript, applying the mobile-first concept.
 
 ## Fase do projeto:
-* width: 360px -> Em andamento;
+* width: 360px -> Concluído;
 * width: 768px -> Em andamento;
 * width: 1366px -> Em andamento;
 * width: 1920px -> Em andamento.
