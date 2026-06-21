@@ -176,17 +176,6 @@ body.menu-expanded .nav__list-links {
     transition: top 0.5s ease, visibility 0s 0s;
 }
 
-/*
-comentado até a funcionalidade de troca de cor ser finalizada
-.nav__list-links::after {
-    display: block;
-    height: 1px;
-    width: 100%;
-    content: "";
-    background: var(--line);
-}
-*/
-
 .nav__bar {
     height: var(--nav-height);
 }
@@ -250,6 +239,7 @@ body.menu-expanded .nav__close-menu-btn {
     align-items: center;
     justify-content: space-between;
     gap: 1.6rem;
+    align-self: center;
 }
 
 /*=== About ===*/
@@ -329,7 +319,7 @@ body.menu-expanded .nav__close-menu-btn {
     }
 }
 
-/*===Contact===*/
+/*=== Contact ===*/
 
 #contact .wrapper {
     align-items: start;
@@ -360,6 +350,10 @@ body.menu-expanded .nav__close-menu-btn {
     justify-content: center;
     gap: 1.6rem;
     width: 100%;
+}
+
+.contact__form button {
+    margin-top: 3.2rem;
 }
 
 .contact__form input, .contact__form textarea {
@@ -426,4 +420,82 @@ footer .socials {
         max-width: 30rem;
     }
 
+}
+
+/*===1366px===*/
+
+@media (min-width: 1366px) {
+    .wrapper {
+        width: 136.6rem;
+        padding-inline: 3rem;
+    }
+
+    #home .wrapper, #about .wrapper, #contact .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        place-items: center;
+    }
+
+    #open-menu, #close-menu {
+        display: none;
+    }
+
+    .nav__bar .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: static;
+        width: 96.6rem;
+    }
+
+    .nav__list-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        visibility: visible;
+        position: static;
+        z-index: 0;
+        width: 40rem;
+        height: 100%;
+        padding-inline: 2rem;
+        gap:2.5rem;
+    }
+
+    .nav__link {
+        align-items: center;
+        padding: 0.8rem 1.2rem;
+        height: 100%;
+    }
+
+    /*=== Home ===*/
+
+    #home .wrapper img {
+        order: 2;
+        max-width: 55rem;
+    }
+
+    #home .content-wrapper {
+        order: 1;
+        padding: 3rem;
+    }
+
+    .btn-wrapper {
+        align-self: start;
+    }
+
+    /*=== About ===*/
+
+    #about .about__img {
+        width: 50rem;
+    }
+
+    /*=== Footer ===*/
+
+    footer .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem;
+    }
 }

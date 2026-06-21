@@ -4,8 +4,8 @@ Project under development using HTML, CSS, and JavaScript, applying the mobile-f
 
 ## Fase do projeto:
 * width: 360px -> Concluído;
-* width: 768px -> Em andamento;
-* width: 1366px -> Em andamento;
-* width: 1920px -> Em andamento.
+* width: 768px -> Concluído;
+* width: 1366px -> Concluído;
+* width: 1920px -> Concluído.
 
 <a href="https://portifolio-nine-blond.vercel.app/" target="_blank">Confira o projeto clicando aqui</a>
