@@ -21,6 +21,19 @@ linksNav.forEach(link => {
   })
 })
 
+// Importa todas as imagens da pasta como URLs
+const languageIcons = import.meta.glob('/src/images/languagesLogos/*.svg', {
+  eager: true,
+  query: '?url',
+  import: 'default'
+});
+
+// Função auxiliar pra buscar a URL certa pelo nome da linguagem
+function getLanguageIconUrl(languageName) {
+  const key = `/src/images/languagesLogos/${languageName.toLowerCase()}-original.svg`;
+  return languageIcons[key] || '';
+}
+
 const token = import.meta.env.VITE_GITHUB_TOKEN
 const usuario = 'AirtonAdams'
 const CACHE_KEY = 'github_repos'
@@ -86,7 +99,11 @@ function renderizarRepos(repos) {
           <p class="repo-name">${repo.name}</p>
           <p class="repo-description">${repo.description || 'Sem descrição'}</p>
           <div class="repo-languages">
-            ${repo.languages.edges.map(lang => `<span class="repo-language"><img src='src/images/languagesLogos/${lang.node.name.toLowerCase()}-original.svg' alt="${lang.node.name}" /></span>`).join('')}
+            ${repo.languages.edges.map(lang => `
+              <span class="repo-language">
+                <img src="${getLanguageIconUrl(lang.node.name)}" alt="${lang.node.name}" />
+              </span>
+            `).join('')}
           </div>
         </a>
       </div>
