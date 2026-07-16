@@ -49,6 +49,14 @@ async function buscarRepositorios() {
               name
               description
               url
+              languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+                edges {
+                  size
+                  node {
+                    name
+                  }
+                }
+              }
             }
           }
         }
@@ -77,6 +85,9 @@ function renderizarRepos(repos) {
         <a href="${repo.url}" target="_blank">
           <p class="repo-name">${repo.name}</p>
           <p class="repo-description">${repo.description || 'Sem descrição'}</p>
+          <div class="repo-languages">
+            ${repo.languages.edges.map(lang => `<span class="repo-language"><img src='src/images/languagesLogos/${lang.node.name.toLowerCase()}-original.svg' alt="${lang.node.name}" /></span>`).join('')}
+          </div>
         </a>
       </div>
     `
